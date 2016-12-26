@@ -1,0 +1,15 @@
+{
+    "name": "jeff/docfiles.dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jeff",
+            "email": "jfroussel75@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "4.0.0-alpha.5",
+        "components/jquery": "^3.1",
+        "gabordemooij/redbean": "^4.3"
+    }
+}
