@@ -18,4 +18,11 @@ define('DB_PASSWORD', 'JFRtnjsjade');
 /**
  * Redbean config
  */
-define('REDBEAN_MODEL_PREFIX', '\\Docfiles\\Model\\');
+define('REDBEAN_MODEL_PREFIX', '\\Model\\');
+
+/**
+ * Default Configuration
+ */
+
+define ('DEFAULT_CONTROLLER' , 'home');
+define('DEFAULT_ACTION', 'homepage');

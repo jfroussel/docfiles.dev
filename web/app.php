@@ -5,4 +5,10 @@
  * Time: 16:59
  */
 require_once '../core/bootstrap.php';
-echo '<h1>test</h1>';
+use RedBeanPHP\Facade as R;
+
+
+$dispatcher = new \Services\Dispatcher();
+$dispatcher->dispatch();
+
+
