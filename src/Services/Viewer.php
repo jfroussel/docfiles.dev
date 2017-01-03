@@ -12,18 +12,26 @@ namespace Services;
 class Viewer
 {
     private $viewPath;
-    private $parameters;
+    private $viewParameters;
+    private $controllerParameters;
 
-    public function setParameters($parameters){
-        $this->parameters = $parameters;
+    public function setViewParameters($parameters){
+        $this->viewParameters = $parameters;
+        return $this;
     }
+
+    public function setControllerParameters($parameters){
+        $this->controllerParameters = $parameters;
+        return $this;
+    }
+
     public function render(){
         $this->createPath();
         echo file_get_contents($this->viewPath);
     }
 
     public function createPath(){
-        list($controller, $action) = $this->parameters;
+        list($controller, $action) = $this->viewParameters;
         $viewPathString = sprintf('../src/Views/%s/%s.html', $controller, $action);
         if(!file_exists($viewPathString)) {
             throw new \Exception("View $viewPathString not found ");

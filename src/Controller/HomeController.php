@@ -12,4 +12,7 @@ namespace Controller;
 class HomeController
 {
 
+    public function homePageAction(){
+        return array('name' => 'jeff roussel');
+    }
 }
